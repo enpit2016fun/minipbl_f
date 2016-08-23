@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = https://github.com/ccoenraets/cordova-tutorial
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = original
+	merge = refs/heads/master
+[remote "original"]
+	url = https://github.com/KazamaYoshimitsu/aaa.git
+	fetch = +refs/heads/*:refs/remotes/original/*
