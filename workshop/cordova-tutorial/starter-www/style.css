@@ -51,8 +51,8 @@ input#submit_button2 {
 }
 
 input#submit_button3{
-	width: 160px;
-	height: 100px;
+	//width: 160px;
+	//height: 100px;
 	background: #FFF;
 	background: -moz-linear-gradient(top,#68e2db 0%,#41aea8);
 	background: -webkit-gradient(linear, left top, left bottom, from(#68e2db), to(#41aea8));
@@ -66,8 +66,8 @@ input#submit_button3{
 	text-align: center;
 	font-weight: bold;
 	font-size: 120%;
-	transition: background-color 0.5s ease-in;
-	-webkit-transition: background-color 0.5s ease-in;
+	//transition: #666 0.5s ease-in;
+	//-webkit-transition: #666 0.5s ease-in;
 }
 input#submit_button3:hover {
 	background: #2a82a3;
