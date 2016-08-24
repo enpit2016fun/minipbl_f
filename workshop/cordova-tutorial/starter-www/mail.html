@@ -9,55 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
 </head>
+<frameset cols="*,250">
+  <frame src="main.htm">
+  <frame src="list.htm">
+<noframes>
+
 <body>
-<!--
-<p><button class="help-btn">Help</button></p>
--->
-
-<div class='header' align="center"><h1>メール送信フォーム</h1></div>
-
-<p>宛先(To):<br>
-<textarea name="to" cols="50" rows="2"></textarea>
-
-件名(Subject):<br>
-<textarea name="subject" cols="50" rows="2"></textarea>
-</p>
-
-<form method="post" action="example.cgi">
-<p>イベント名(Event):<br>
-<select name="event" placeholder="イベントを選択してください">
-<option value="origin" selectede>選択してください</option>
-<option value="apr_1">入園式</option>
-<option value="may_1">函館山登山遠足</option>
-<option value="jun_1">いちご狩り</option>
-<option value="jul_1">海遠足・七夕まつり</option>
-<option value="aug_1">収穫祭</option>
-<option value="sep_1">つくしっこ祭り・十五夜・運動会</option>
-<option value="oct_1">秋の遠足</option>
-<option value="nov_1">焼きいも会</option>
-<option value="sep_1">クリスマス会・もちつき大会</option>
-<option value="jan_1">そり遠足・冬まつり</option>
-<option value="feb_1">節分</option>
-<option value="mar_1">ひな祭り・卒園式</option>
-</select>
-</p>
-
-<p>本文:<br>
-<textarea name="email_text" cols="10" rows="20"></textarea>
-</p>
-
-<p><input type="submit" value="送信する"></p>
-</form>
-
-
-
-
-
-<script src="lib/handlebars.js"></script>
-<script src="cordova.js"></script>
-<script src="lib/jquery.js"></script>
-<script src="js/services/websql/EmployeeService.js"></script>
-<script src="js/app.js"></script>
-
 </body>
 </html>
