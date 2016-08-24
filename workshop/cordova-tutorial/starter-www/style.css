@@ -4,7 +4,6 @@ input#submit_button1 {
 	height: 150px;
 	background-color: #000;
 	color: #fff;
-
 }
 input#submit_button2 {
     /* 文字サイズを1.4emに指定 */
@@ -49,7 +48,6 @@ input#submit_button2 {
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
-
 input#submit_button3{
 	width: 160px;
 	height: 100px;
@@ -73,4 +71,7 @@ input#submit_button3:hover {
 	background: #2a82a3;
 	color: #FFF;
 	border: 1px solid #FFF;
+}
+.sample{
+    width: 20px;
 }
