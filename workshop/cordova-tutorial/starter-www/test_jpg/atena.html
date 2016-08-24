@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Javascriptで撮ったスクショからPDFを作る</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="js/html2canvas.js" ></script>
+        <script type="text/javascript" src="js/jsPDF/jspdf.js"></script>
+        <script type="text/javascript" src="js/jsPDF/jspdf.plugin.addimage.js"></script>
+        <script type="text/javascript" src="js/jsPDF/jspdf.plugin.standard_fonts_metrics.js"></script>
+        <script type="text/javascript" src="js/jsPDF/jspdf.plugin.split_text_to_size.js"></script>
+        <script type="text/javascript" src="js/jsPDF/jspdf.plugin.from_html.js"></script>
+        <script type="text/javascript" src="js/FileSaver.js"></script>
+        <script type="text/javascript" src="js/FileSaver.min.js"></script>
+        <script type="text/javascript" src="js/makePDF.js"></script>
+        <style type="text/css">
+        </style>
+        
+        
+    </head>
+    <body>
+       
+       
+        <button id="go">pdf作成!!</button>
+       <!--
+        <div id = "test1" style="background-color:white">
+            オジンオズボーン<br>
+            
+            <iframe id="renderSpace" frameborder="0" width="450" height="450"></iframe>
+           -->
+       
+        <!--    <input type="button" value="PDFダウンロード" onclick="test1()" class="btn btn-success" /><br>
+            <img id = "img1" src="imori.jpg" /><br>
+        </div> -->
+
+
+        <div id="out">
+            <div id="target">
+                
+                <div id = "test1" style="background-color:white">
+                   <div style="position:absolute; top:50px; left:20px;">
+                       050-0000<br>
+                       北海道函館市五稜郭<br>
+                       オジンオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:50px; left:420px;">
+                        050-0071<br>
+                        北海道室蘭市水元町<br>
+                        オジーオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:150px; left:20px;">
+                        050-0070<br>
+                        北海道増毛郡増毛町ああ町あ丁目ああ<br>
+                        オジルオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:150px; left:420px;">
+                        050-0072<br>
+                        北海道増毛郡増毛町ああ町あ丁目ああ<br>
+                        オジカオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:250px; left:20px;">
+                        050-0073<br>
+                        北海道室蘭市木元町ああああああああああああああ<br>
+                        オジムオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:250px; left:420px;">
+                        050-0074<br>
+                        北海道室蘭市金元町ああああああああああああああ<br>
+                        オジスオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:350px; left:20px;">
+                        050-0075<br>
+                        北海道室蘭市土元町ああああああああああああああ<br>
+                        オズボオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:350px; left:420px;">
+                        050-0076<br>
+                        北海道室蘭市日元町ああああああああああああああ<br>
+                        オズンオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:450px; left:20px;">
+                        050-0077<br>
+                        北海道室蘭市オ元町ああああああああああああああ<br>
+                        オズズオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:450px; left:420px;">
+                        050-0078<br>
+                        北海道室蘭市ジ元町ああああああああああああああ<br>
+                        オジジオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:550px; left:20px;">
+                        050-0077<br>
+                        北海道室蘭市ン元町ああああああああああああああ<br>
+                        オジグオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:550px; left:420px;">
+                        050-0078<br>
+                        北海道室蘭市オ元町ああああああああああああああ<br>
+                        オジクオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:650px; left:20px;">
+                        050-0077<br>
+                        北海道室蘭市ン元町あ<br>
+                        オジグオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:650px; left:420px;">
+                        050-0078<br>
+                        北海道室蘭市オ元町あ<br>
+                        オジクオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:750px; left:20px;">
+                        050-0077<br>
+                        北海道室蘭市ン元町０おおおおおおおおお<br>
+                        オジグオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:750px; left:420px;">
+                        050-0078<br>
+                        北海道室蘭市オ元町おおおおおおおおお<br>
+                        オジクオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:850px; left:20px;">
+                        050-0077<br>
+                        北海道室蘭市ン元町えええええええええ<br>
+                        オジグオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:850px; left:420px;">
+                        050-0078<br>
+                        北海道室蘭市オ元町ええええええええ<br>
+                        オジクオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:950px; left:20px;">
+                        050-0077<br>
+                        北海道室蘭市ン元町うううううううう<br>
+                        オジグオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:950px; left:420px;">
+                        050-0078<br>
+                        北海道室蘭市オ元町うううううううう<br>
+                        オジクオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:1050px; left:20px;">
+                        050-0077<br>
+                        北海道室蘭市ン元町いいいいいい<br>
+                        オジグオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:1050px; left:420px;">
+                        050-0078<br>
+                        北海道室蘭市オ元町いいいいい<br>
+                        オジクオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:1150px; left:20px;">
+                        050-0077<br>
+                        北海道室蘭市ン元町カカカカカカか<br>
+                        オジグオズボーン<br></div>
+                    
+                    <div style="position:absolute; top:1150px; left:420px;">
+                        050-0078<br>
+                        北海道室蘭市オ元町カカカカカカかかk<br>
+                        オジクオズボーン<br></div>
+
+                    <iframe id="renderSpace" frameborder="0" width="800" height="800"></iframe>
+               
+               <!-- <style type="text/css">
+                </style>
+                    <table border="1">
+                        <tr>
+                            <td>ぐおおお</td>
+                            <td>ぐおおお</td>
+                            <td>ぐおおお</td>
+                        </tr>
+                        <tr>
+                            <td>ぐおおお</td>
+                            <td>ぐおおお</td>
+                            <td>ぐおおお</td>
+                        </tr>
+                        <tr>
+                            <td>ぐおおお</td>
+                            <td>ぐおおお</td>
+                            <td>ぐおおお</td>
+                        </tr>
+                    </table> -->
+                </div>
+            </div>
+    </body>
+</html>
+
