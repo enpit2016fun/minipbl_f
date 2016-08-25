@@ -9,33 +9,51 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<script type="text/javascript">
+function open3(f) {
+    window.name = (new Date()).getTime();
+    var date = new Date();
+    var time = date.getTime()
+    f.target = window.name + time;
+    var w = window.open("about:blank", f.target, 'width=500, height=500');
+    w.focus();
+    f.submit();
+}
+</script>
 </head>
 <body>
 <!--
 <p><button class="help-btn">Help</button></p>
 -->
-
+<form action="http://192.168.11.9/regist.php/new_window.cgi" method="post">
+  
 <div class='header'align="center"style="margin : 30px 10% 0px 10% ; width:80%; padding:10px;font-size:30px;"><h1>新しい園児の登録</h1></div>
 <div >
     <nobr style="margin : 10px 0px 0px 10px ;"> <label for="name"style="width: 150px;float: left;"align="center">新しい園児の名前</label>
-    <input style="margin : 0px 10px 10px 5px ; width:10%; padding:10px;"type="text" name="園児の名前"placeholder="姓"/>
-    <input style="margin : 0px 10px 10px 5px ; width:10%; padding:10px;"type="text" name="園児の名前"placeholder="名"/></nobr>
+    <input style="margin : 0px 10px 10px 5px ; width:10%; padding:10px;"type="text" name="c_last_n" placeholder="姓"/>
+    <input style="margin : 0px 10px 10px 5px ; width:10%; padding:10px;"type="text" name="c_first_n" placeholder="名"/></nobr>
 </div>
+
+
 <div >
     <nobr style="margin : 10px 0px 0px 10px ;"> <label for="oyaname"style="width: 150px;float: left;"align="center">保護者の名前</label>
-        <input style="margin : 0px 10px 10px 5px ; width:10%; padding:10px;"type="text" name="保護者の名前"placeholder="姓"/>
-        <input style="margin : 0px 10px 10px 5px ; width:10%; padding:10px;"type="text" name="保護者の名前"placeholder="名"/></nobr>
+        <input style="margin : 0px 10px 10px 5px ; width:10%; padding:10px;"type="text" name="p_last_n"placeholder="姓"/>
+        <input style="margin : 0px 10px 10px 5px ; width:10%; padding:10px;"type="text" name="p_first_n"placeholder="名"/></nobr>
 </div>
+
 <div >
     <nobr style="margin : 10px 0px 0px 10px ;"> <label for="yuubinn"style="width: 150px;float: left;"align="center">郵便番号</label>
-    <input style="margin : 0px 10% 10px 5px ; width:21%; padding:10px;"type="text"maxlength="7" name="郵便番号"placeholder="ハイフンなし半角で入力"/></nobr>
+    <input style="margin : 0px 10% 10px 5px ; width:21%; padding:10px;"type="text"maxlength="8" name="p_code"placeholder="ハイフンあり半角で入力"/></nobr>
 </div>
 <div >
     <nobr style="margin : 10px 0px 0px 10px ;"> <label for="adress"style="width: 150px;float: left;"align="center">住所</label>
-    <input style="margin : 0px 10% 10px 5px ; width:70%; padding:10px;"type="text" name="住所"placeholder="新しい園児の住所を入力してください"/></nobr>
+    <input style="margin : 0px 10% 10px 5px ; width:70%; padding:10px;"type="text" name="address"placeholder="新しい園児の住所を入力してください"/></nobr>
 </div>
-<form name="yyyymmdd" method="post" action="#"><nobr style="margin : 10px 0px 0px 10px ;"> <label for="birth"style="width: 150px;float: left;"align="center">生年月日</label>
-    <select name="select"style="margin : 0px 0px 0px 5px ; width:5%; padding:10px;">
+<!--
+<form name="yyyymmdd" method="post" action="#">
+-->
+<nobr style="margin : 10px 0px 0px 10px ;"> <label for="birth"style="width: 150px;float: left;"align="center">生年月日</label>
+    <select name="year"style="margin : 0px 0px 0px 5px ; width:5%; padding:10px;">
         <option value="">--</option>
         <option value="2000">2000</option>
         <option value="2001">2001</option>
@@ -119,17 +137,26 @@
     </select>
     日 <br>
     <br>
-</nobr></form>
+</nobr>
+<!--
+</form>
+-->
 <div ><nobr style="margin : 10px 0px 0px 10px ;"> <label for="phone"style="width: 150px;float: left;"align="center">緊急連絡先</label>
-    <input style="margin : 0px 10% 10px 5px ; width:70%; padding:10px;" type="text" name="緊急連絡先"placeholder="保護者の緊急連絡先を入力してください"/></nobr>
-    <!--
+    <input style="margin : 0px 10% 10px 5px ; width:70%; padding:10px;" type="text" name="tel"placeholder="保護者の緊急連絡先を入力してください"/></nobr>
+ <!--
 <input id="submit_button4" style="margin : 30px 10% 30px 10% ; width:80%; padding:10px;font-size:30px;" type="button" onclick="location.href='mail.html?bk=1'" value="変更をやめる" />
 <input id="submit_button4" style="margin : 30px 10% 30px 10% ; width:80%; padding:10px;font-size:30px;" type="button" onclick="location.href='mail.html?bk=1'" value="変更して名簿に戻る" />
      -->
 </div>
 <div style="display:inline-flex">
+	
+    <input id="submit_button6" style="margin : 30px 30px 30px 30px ;  padding:10px;font-size:30px;" type="submit" onclick="open3(this.form)" value="登録する" />
+</form>
+
+
+
 <form>
-    <input id="submit_button6" style="margin : 30px 30px 30px 30px ;  padding:10px;font-size:30px;" type="button" onclick="location.href='index.html?bk=1'" value="登録をやめる" />
+    <input id="submit_button6" style="margin : 30px 30px 30px 30px ;  padding:10px;font-size:30px;" type="button" onclick="location.href='child_list.html?bk=1'" value="登録をやめる" />
 </form>
 
 <form>
@@ -139,7 +166,6 @@
     <input id="submit_button6" style="margin : 30px 30px 30px 30px ;  padding:10px;font-size:20px;" type="button" onclick="location.href='mail.html?bk=1'" value="登録して次の登録を続ける" />
 </form>
 </div>
-
 <!--
 <script id="home-tpl" type="text/template">
     <header class="bar bar-nav">
@@ -150,8 +176,6 @@
     </div>
     <div class="content"></div>
 </script>
-
-
 <script id="employee-list-tpl" type="text/template">
     <ul class="table-view">
         {{#each this}}
