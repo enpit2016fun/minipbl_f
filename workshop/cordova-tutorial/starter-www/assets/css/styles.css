@@ -1,15 +1,15 @@
 
-
-h1 {
-		font-family: 'KFhimaji';
-    src: url('KFhimaji/KFhimaji.oft');
-	
+html {
+    background-color:#000000;
+background: url(PHOT00000000000D5549-2.jpg);
+   height:120%;
 }
 
-body{
-    
-    font-family: 'KFhimaji';
+h1 {
+	
+	font-family: 'KFhimaji';
     src: url('KFhimaji/KFhimaji.oft');
+	
 }
 
 ul {
