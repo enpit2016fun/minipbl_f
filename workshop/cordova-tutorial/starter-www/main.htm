@@ -68,9 +68,16 @@
 </p>
 </div>
 
-<a class="button" onclick="location.href='start.html?bk=1'" style="margin : 0% 0% 0% 20%; width:200px; height:50px" href="#">戻る</a>
+<script language="JavaScript">
+    function clearFrame()
+    {
+        top.location.href = "start.html?bk=1";
+    }
+</script>
 
-<a class="button" onclick="location.href='start.html?bk=1'" style="margin : 0% 0% 0% 20%; width:200px; height:50px" href="#">送信</a>
+<a class="button" onclick="clearFrame()" style="margin : 0% 0% 0% 20%; width:200px; height:50px" href="#">戻る</a>
+
+<a class="button" onclick="clearFrame()" style="margin : 0% 0% 0% 20%; width:200px; height:50px" href="#">送信</a>
 
 <!--
 <div style="display:inline-flex">
