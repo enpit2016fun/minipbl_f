@@ -4,7 +4,7 @@
 
 <link href="assets/ratchet/css/ratchet.css" rel="stylesheet">
 <link href="assets/css/styles.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet"  />
+<link href="assets/css/style_sta.css" rel="stylesheet"  />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
         
@@ -14,7 +14,26 @@
 <p><button class="help-btn">Help</button></p>
 -->
 
-<div class='header'align="center"style="margin : 30px 10% 30px 10% ; width:80%; padding:10px;font-size:30px;"><h1>保育園KANRI</h1></div>
+<div class="panel">
+    <div class="panel-in">
+        <div class="panel-main">
+
+
+<div class='header'align="center"style="margin : 30px 10% 30px 10% ; width:80%; padding:10px;font-size:30px;"><h1>保育園 NO KANRI NO LIFE</h1></div>
+
+<style type = "text/css">
+
+
+body{
+    
+   background:url(tukushi.jpg);
+    background-size:cover;
+}
+
+
+
+</style>
+
 <!--
 <div class='search-view'>
     <input class='search-key' type="search" placeholder="Enter name"/>
@@ -22,9 +41,20 @@
 </div>
  -->
 
+
+    <a id="meibo" class="button" style="margin : 10% 5% 10% 12% ;" href="#" onclick="location.href='index.html?bk=1'">名簿管理</a>
+    
+    <a id="atena" class="button" style="margin : 10% 5% 10% 5% ;" href="#" onclick="location.href='letter.html?bk=1'">宛名作成</a>
+    
+    <a id="mail" class="button" style="margin : 10% 5% 10% 5% ;" href="#" onclick="location.href='mail.html?bk=1'">メール送信</a>
+
+
+<!--
 <input id="submit_button3" style="margin : 30px 10% 30px 10% ; width:80%; padding:10px;font-size:30px;" type="button" onclick="location.href='index.html?bk=1'" value="在園児・卒園児の名簿管理" />
 <input id="submit_button3" style="margin : 30px 10% 30px 10% ; width:80%; padding:10px;font-size:30px;" type="button" onclick="location.href='letter.html?bk=1'" value="ハガキの宛名作成" />
 <input id="submit_button3" style="margin : 30px 10% 30px 10% ; width:80%; padding:10px;font-size:30px;" type="button" onclick="location.href='mail.html?bk=1'" value="イベントメール作成" />
+ -->
+ 
 <!--
 <script id="home-tpl" type="text/template">
     <header class="bar bar-nav">
@@ -52,8 +82,12 @@
         {{/each}}
     </ul>
 </script>
-
 -->
+
+        </div>
+    </div>
+</div>
+
 
 <script src="lib/handlebars.js"></script>
 <script src="cordova.js"></script>
