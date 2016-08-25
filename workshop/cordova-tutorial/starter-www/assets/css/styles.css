@@ -1,3 +1,17 @@
+
+
+h1 {
+		font-family: 'KFhimaji';
+    src: url('KFhimaji/KFhimaji.oft');
+	
+}
+
+body{
+    
+    font-family: 'KFhimaji';
+    src: url('KFhimaji/KFhimaji.oft');
+}
+
 ul {
     clear: both;
 }
