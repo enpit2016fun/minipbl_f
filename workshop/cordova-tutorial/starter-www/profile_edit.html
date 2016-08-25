@@ -5,6 +5,7 @@
 <link href="assets/ratchet/css/ratchet.css" rel="stylesheet">
 <link href="assets/css/styles.css" rel="stylesheet">
 <link href="assets/css/profile_edit_style.css" rel="stylesheet">
+    <link href="assets/css/style_sub.css" rel="stylesheet">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
@@ -14,6 +15,18 @@
 <p><button class="help-btn">Help</button></p>
 -->
 
+<style type = "text/css">
+    body{
+        
+        background:url(tukushi.jpg);
+        background-size:cover;
+    }
+</style>
+
+<div class="panel">
+    <div class="panel-in">
+        <div class="panel-main">
+            
 <div class='header'align="center"style="margin : 30px 10% 30px 10% ; width:80%; padding:10px;font-size:30px;"><h1>名前・住所の変更</h1></div>
 <td align="center" valign="top">　変更前の苗字：</td><br>
 <td align="center" valign="top">　（ここに変更前の苗字を表示）</td><br>
@@ -40,6 +53,8 @@
 <input id="submit_button4" style="margin : 30px 10% 30px 10% ; width:80%; padding:10px;font-size:30px;" type="button" onclick="location.href='mail.html?bk=1'" value="変更して名簿に戻る" />
      -->
 </div>
+
+<!--
 <div style="display:inline-flex">
 <form>
     <input id="submit_button4" style="margin : 30px 30px 30px 30px ;  padding:10px;font-size:30px;" type="button" onclick="location.href='index.html?bk=1'" value="変更をやめる" />
@@ -49,6 +64,11 @@
     <input id="submit_button5" style="margin : 30px 10% 30px 10% ;  padding:10px;font-size:30px;" type="button" onclick="location.href='mail.html?bk=1'" value="変更して名簿に戻る" />
 </form>
 </div>
+ -->
+
+<a class="button" onclick="location.href='child_list.html?bk=1'" style="margin : 0% 10% 10% 5%; width:350px; height:50px" href="#">変更をやめる</a>
+
+<a class="button" onclick="location.href='child_list.html?bk=1'" style="margin : 0% 10% 10% 5%; width:350px; height:50px" href="#">変更して名簿に登録</a>
 
 <!--
 <script id="home-tpl" type="text/template">
@@ -79,7 +99,7 @@
 </script>
  -->
 
-
+</div></div></div>
 
 <script src="lib/handlebars.js"></script>
 <script src="cordova.js"></script>
