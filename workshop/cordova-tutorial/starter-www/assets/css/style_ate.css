@@ -1,0 +1,12 @@
+.button {
+    display: inline-block;
+    padding: .2em 2.5em;
+    border: 2px solid #333;
+    border-radius: .4em 2em .5em 3em/3em .5em 2em .5em;
+    color: #333;
+    font-family: 'KFhimaji';
+    src: url('KFhimaji/KFhimaji.oft');
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+}
