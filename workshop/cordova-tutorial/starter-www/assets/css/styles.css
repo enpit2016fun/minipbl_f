@@ -6,12 +6,13 @@ background: url(PHOT00000000000D5549-2.jpg);
 }
 
 h1 {
+
 	padding: 1em;
 	border: 3px solid #000;
 	border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
 	font-family: 'KFhimaji';
 
-    src: url('KFhimaji/KFhimaji.oft');
+	KFhimaji/KFhimaji.oft');
 	
 }
 
@@ -21,6 +22,7 @@ body{
     font-family: 'KFhimaji';
     src: url('KFhimaji/KFhimaji.oft');
 }
+
 
 ul {
     clear: both;
