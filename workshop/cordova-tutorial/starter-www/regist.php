@@ -1,3 +1,31 @@
+!DOCTYPE html>
+<html>
+<head>
+<title>登録後画面</title>
+<meta charset="utf-8">
+
+<script type="text/javascript"><!--
+function ChangeTab(tabname) {
+   // 全部消す
+   document.getElementById('tab1').style.display = 'none';
+   document.getElementById('tab2').style.display = 'none';
+   // 指定箇所のみ表示
+   document.getElementById(tabname).style.display = 'block';
+}
+// --></script>
+<style type="text/css">
+
+a { text-decoration: none; }
+body{
+font-family:'KFhimaji';
+src:url('KFhimaji/KFhimaji.oft');
+}
+</style>
+
+
+</head>
+<body>
+
 <?php
 
 header("Content-type: text/html; charset=utf-8");
@@ -86,3 +114,5 @@ if(empty($_POST)) {
 $mysqli->close();
  
 ?>
+</body>
+</html>
