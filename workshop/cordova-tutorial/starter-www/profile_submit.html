@@ -6,7 +6,7 @@
 <link href="assets/ratchet/css/ratchet.css" rel="stylesheet">
 <link href="assets/css/styles.css" rel="stylesheet">
 <link href="assets/css/profile_submit_style.css" rel="stylesheet">
-    <link href="assets/css/style_sub.css" rel="stylesheet">
+   <link href="assets/css/style_sub.css" rel="stylesheet">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
@@ -26,8 +26,7 @@ function open3(f) {
 <!--
 <p><button class="help-btn">Help</button></p>
 -->
-<form action="http://192.168.11.9/regist.php/new_window.cgi" method="post">
-    
+
     
     
     </style>
@@ -47,6 +46,7 @@ function open3(f) {
 
   
 <div class='header'align="center"style="margin : 30px 10% 0px 10% ; width:80%; padding:10px;font-size:30px;"><h1>新しい園児の登録</h1></div>
+<form action="http://192.168.11.9/regist.php/new_window.cgi" method="post">
 <div >
     <nobr style="margin : 10px 0px 0px 10px ;"> <label for="name"style="width: 150px;float: left;"align="center">新しい園児の名前</label>
     <input style="margin : 0px 10px 10px 5px ; width:10%; padding:10px;"type="text" name="c_last_n" placeholder="姓"/>
@@ -166,14 +166,25 @@ function open3(f) {
 <input id="submit_button4" style="margin : 30px 10% 30px 10% ; width:80%; padding:10px;font-size:30px;" type="button" onclick="location.href='mail.html?bk=1'" value="変更をやめる" />
 <input id="submit_button4" style="margin : 30px 10% 30px 10% ; width:80%; padding:10px;font-size:30px;" type="button" onclick="location.href='mail.html?bk=1'" value="変更して名簿に戻る" />
      -->
- 
- <a class="button" style="margin : 10% 10% 10% 17%; width:250px; height:50px" href="#">登録する</a>
- 
- <a class="button" style="margin : 10% 10% 10% 5%; width:250px; height:50px" href="#">登録をやめる</a>
- 
- 
+
+<!--
+<a><input class="button" type="submit" onclick="open3(this.form)"  style="margin : 10% 10% 10% 20%; width:250px; height:50px background-color:transparent;" value="登録する"  href="#"/></a>
+-->
+
+<div style="display:inline-flex">
+ <button class="button" type="submit" onclick="open3(this.form)"  style="margin : 10% 10% 10% 10%; width:400px; height:50px; background-color:transparent;" href="#">登録する</button>
+ </form>
+
+
+
+ <a class="button" onclick="location.href='child_list.html?bk=1'" style="margin : 10% 10% 10% 5%; width:400px; height:50px" href="#">登録をやめる</a>
+ </div>
  
  <!--
+  <a><input class="button" type="submit" onclick="open3(this.form)"  style="margin : 10% 10% 10% 300%; width:250px; height:50px" value="登録する" href="#"/></a>
+ </form>
+ 
+ 
 </div>
 <div style="display:inline-flex">
 	
