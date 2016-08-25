@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<link href="assets/ratchet/css/ratchet.css" rel="stylesheet">
+<link href="assets/css/styles.css" rel="stylesheet">
+<link href="assets/css/profile_submit_style.css" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+<!--
+<p><button class="help-btn">Help</button></p>
+-->
+
+<div class='header'align="center"style="margin : 30px 10% 0px 10% ; width:80%; padding:10px;font-size:30px;"><h1>新しい園児の登録</h1></div>
+<div >
+    <nobr style="margin : 10px 0px 0px 10px ;"> <label for="name"style="width: 150px;float: left;"align="center">新しい園児の名前</label>
+    <input style="margin : 0px 10px 10px 5px ; width:10%; padding:10px;"type="text" name="園児の名前"placeholder="姓"/>
+    <input style="margin : 0px 10px 10px 5px ; width:10%; padding:10px;"type="text" name="園児の名前"placeholder="名"/></nobr>
+</div>
+<div >
+    <nobr style="margin : 10px 0px 0px 10px ;"> <label for="oyaname"style="width: 150px;float: left;"align="center">保護者の名前</label>
+        <input style="margin : 0px 10px 10px 5px ; width:10%; padding:10px;"type="text" name="保護者の名前"placeholder="姓"/>
+        <input style="margin : 0px 10px 10px 5px ; width:10%; padding:10px;"type="text" name="保護者の名前"placeholder="名"/></nobr>
+</div>
+<div >
+    <nobr style="margin : 10px 0px 0px 10px ;"> <label for="yuubinn"style="width: 150px;float: left;"align="center">郵便番号</label>
+    <input style="margin : 0px 10% 10px 5px ; width:21%; padding:10px;"type="text"maxlength="7" name="郵便番号"placeholder="ハイフンなし半角で入力"/></nobr>
+</div>
+<div >
+    <nobr style="margin : 10px 0px 0px 10px ;"> <label for="adress"style="width: 150px;float: left;"align="center">住所</label>
+    <input style="margin : 0px 10% 10px 5px ; width:70%; padding:10px;"type="text" name="住所"placeholder="新しい園児の住所を入力してください"/></nobr>
+</div>
+<form name="yyyymmdd" method="post" action="#"><nobr style="margin : 10px 0px 0px 10px ;"> <label for="birth"style="width: 150px;float: left;"align="center">生年月日</label>
+    <select name="select"style="margin : 0px 0px 0px 5px ; width:5%; padding:10px;">
+        <option value="">--</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+        <option value="2007">2007</option>
+        <option value="2008">2008</option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        
+    </select>
+    年
+    <SELECT name="month"style="margin : 0px 0px 0px 5px ; width:3%; padding:10px;">
+        <option value="">--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </SELECT>
+    月
+    <SELECT name="day"style="margin : 0px 0px 0px 5px ; width:3%; padding:10px;">
+        <option value="">--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+    </select>
+    日 <br>
+    <br>
+</nobr></form>
+<div ><nobr style="margin : 10px 0px 0px 10px ;"> <label for="phone"style="width: 150px;float: left;"align="center">緊急連絡先</label>
+    <input style="margin : 0px 10% 10px 5px ; width:70%; padding:10px;" type="text" name="緊急連絡先"placeholder="保護者の緊急連絡先を入力してください"/></nobr>
+    <!--
+<input id="submit_button4" style="margin : 30px 10% 30px 10% ; width:80%; padding:10px;font-size:30px;" type="button" onclick="location.href='mail.html?bk=1'" value="変更をやめる" />
+<input id="submit_button4" style="margin : 30px 10% 30px 10% ; width:80%; padding:10px;font-size:30px;" type="button" onclick="location.href='mail.html?bk=1'" value="変更して名簿に戻る" />
+     -->
+</div>
+<div style="display:inline-flex">
+<form>
+    <input id="submit_button6" style="margin : 30px 30px 30px 30px ;  padding:10px;font-size:30px;" type="button" onclick="location.href='index.html?bk=1'" value="登録をやめる" />
+</form>
+
+<form>
+    <input id="submit_button6" style="margin : 30px 30px 30px 30px  ;  padding:10px;font-size:25px;" type="button" onclick="location.href='mail.html?bk=1'" value="登録して名簿に戻る" />
+</form>
+<form>
+    <input id="submit_button6" style="margin : 30px 30px 30px 30px ;  padding:10px;font-size:20px;" type="button" onclick="location.href='mail.html?bk=1'" value="登録して次の登録を続ける" />
+</form>
+</div>
+
+<!--
+<script id="home-tpl" type="text/template">
+    <header class="bar bar-nav">
+        <h1 class="title">ハガキ作成</h1>
+    </header>
+    <div class="bar bar-standard bar-header-secondary">
+        <input class='search-key' type="search"/>
+    </div>
+    <div class="content"></div>
+</script>
+
+
+<script id="employee-list-tpl" type="text/template">
+    <ul class="table-view">
+        {{#each this}}
+        <li class="table-view-cell media">
+          <a href="#employees/{{ id }}">
+              <img class="media-object pull-left" src="assets/pics/{{pic}}">
+              <div class="media-body">
+                  {{firstName}} {{lastName}}
+                  <p>{{title}}</p>
+              </div>
+          </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+ -->
+
+
+
+<script src="lib/handlebars.js"></script>
+<script src="cordova.js"></script>
+<script src="lib/jquery.js"></script>
+<script src="js/services/websql/EmployeeService.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
